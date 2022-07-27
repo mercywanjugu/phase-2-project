@@ -7,14 +7,13 @@ import Home from "./Home";
 
 function App() {
   
-  // const randomColor = getRandomColor();
   const [colors, setColors] = useState([]);
 
   useEffect(() => {
     fetch("https://calm-falls-89460.herokuapp.com/colors")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data[0].hex);
+        setColors(data)
       });
   }, []);
 
@@ -24,11 +23,11 @@ function App() {
     <ul>
       {
         colors.map((color, index) => {
-          return <li key={index} index>{color?.name}</li>
+          return <li key={index} style={{color:color?.hex}} index>{color?.name}</li>
          })
       }
     </ul>
-    <Home/>
+    {/* <Home/> */}
   </Fragment>)
 
 }
