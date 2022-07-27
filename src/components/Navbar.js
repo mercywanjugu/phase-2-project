@@ -5,10 +5,10 @@ function Navbar(){
       <a className="navbar-brand" href="#">ECDE LEARNING APP</a>
     </div>
     <ul className="nav navbar-nav">
-      <li className="active"><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
+      {/* <li className="active"><a href="#">Home</a></li> */}
+      <li><a href="#">Home</a></li>
       <li><a href="#">Contacts</a></li>
-      <li><a href="#"></a></li>
+      <li><a href="#">About</a></li>
     </ul>
   </div>
 </nav>

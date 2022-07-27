@@ -1,9 +1,9 @@
 import React, { useState, useEffect, Fragment } from "react";
-import '../App.css';
+// import '../App.css';
 import Navbar from './Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home";
-
+import Contact from "./Contact";
 
 function App() {
   
@@ -19,15 +19,17 @@ function App() {
 
   return (<Fragment>
     <Navbar/>
+    <Contact/>
+
     
-    <ul>
+    {/* <ul>
       {
         colors.map((color, index) => {
           return <li key={index} style={{color:color?.hex}} index>{color?.name}</li>
          })
       }
-    </ul>
-    {/* <Home/> */}
+    </ul> */}
+    { <Home/> }
   </Fragment>)
 
 }
