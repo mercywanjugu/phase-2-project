@@ -1,6 +1,5 @@
-import React from 'react'
-import {useState} from 'react';
-  
+
+import React, { useState, useEffect, } from "react"; 
 const useGenerateRandomColor = () => {
     const [color,setColor] = useState("")
     const generateColor = () =>{
@@ -11,10 +10,15 @@ const useGenerateRandomColor = () => {
 };
 
 function Home() {
-  // return (
-  //   // <div>Home</div>
-    
-  // )
+  const [colors, setColors] = useState([]);
+
+  useEffect(() => {
+    fetch("https://calm-falls-89460.herokuapp.com/colors")
+      .then((response) => response.json())
+      .then((data) => {
+        setColors(data)
+      });
+  }, []);
 
   const { color, generateColor } 
   = useGenerateRandomColor();

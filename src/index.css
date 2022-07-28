@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.post-feedback {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.post-feedback label {
+  text-align: left;
+  display: block;
+}
+.post-feedback h1 {
+  font-size: 20px;
+  color: green;
+  margin-bottom: 30px;
+}
+.post-feedback input, .post-feedbach textarea {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.post-feedback button {
+  background:green;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}

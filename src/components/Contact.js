@@ -1,33 +1,31 @@
+
 import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 
-function Contact() {
+export default function Contact() {
   return (
-   
-    
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
-          </Form.Group>
-    
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>comment</Form.Label>
-            <Form.Control type="text" placeholder="text" />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
-        </Form>
-      );
-    }
-    
+    // <div>Contact</div>
+    <div className = "post-feedback">
+            <h1> Leave feedback</h1>
+            <form>
+                <label> Name</label>
+                <input
+                 type="text" 
+                 required
+                 />
+                 <label> Email  </label>
+                 <input 
+                 required
+                 >
+                 </input>
+                 <label> comment  </label>
+                <textarea
+                 type="text" 
+                 required
+                 />
+                 <button>Submit </button>
+            </form>
+            </div>
+     );
+}
+  
 
-export default Contact;
