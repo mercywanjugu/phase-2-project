@@ -5,35 +5,47 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   
-  // const [colors, setColors] = useState([]);
 
-  // useEffect(() => {
-  //   fetch("https://calm-falls-89460.herokuapp.com/colors")
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setColors(data)
-  //     });
-  // }, []);
-
-  return (<Fragment>
-    <Navbar/>
-    <Home/>
-    <Contact/>
-    <About/>
-
-    
-    {/* { <ul>
-      {
-        colors.map((color, index) => {
-          return <li key={index} style={{color:color?.hex}} index>{color?.name}</li>
-         })
-      }
-    </ul> } */}
-    {/* { <Home/> } */}
-  </Fragment>)
+  return (
+    <Router>
+    <div className="App">
+      <Navbar />
+      <div className="content">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About/>
+          </Route>
+          <Route path="Contact">
+            <Contact/>
+          </Route>
+        </Switch>
+      </div>
+    </div>
+  </Router>
+    // <Router>
+    //   <div>
+    //     <Navbar/>
+    //     <switch>
+    //       <Route path="/">
+    //     <Home/>
+    //       </Route>
+    //       <Route exact path="/">
+    //     <Contact/>
+    //       </Route>
+    //       <Route path="/">
+    //     <About/>
+    //       </Route>
+    //     </switch>
+    //   </div>
+    // </Router>
+ )
 
 }
 
