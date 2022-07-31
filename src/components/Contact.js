@@ -34,14 +34,14 @@ function Contact() {
                  value={name}
                  onChange={(e) => setName(e.target.value)}
                  />
-                 <label> Email  </label>
+                 <label> Email</label>
                  <input 
                  required
                  value={email}
                  onChange={(e) => setEmail(e.target.value)}
                  >
                  </input>
-                 <label> comment  </label>
+                 <label> comment</label>
                 <textarea
                  type="text" 
                  required
