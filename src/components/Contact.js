@@ -13,7 +13,7 @@ function Contact() {
       e.preventDefault();
       const info = { name, email, comment };
 
-      fetch('https://calm-falls-89460.herokuapp.com/colors', {
+      fetch('https://vast-atoll-64871.herokuapp.com/contacts', {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(info)
