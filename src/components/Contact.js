@@ -13,12 +13,14 @@ function Contact() {
       e.preventDefault();
       const info = { name, email, comment };
 
-      fetch('https://vast-atoll-64871.herokuapp.com/contacts', {
+      fetch('https://mighty-headland-85949.herokuapp.com/contacts', {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(info)
       }).then(() => {
+        console.log("new comment added");
         his.push('/')
+        
       })
     }
 

@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="card">
       <div className='About'>
-      <h1>We Help Kids Understand Colors Better </h1>
+      <h1 className="header">We Help Kids Understand Colors Better </h1>
       <p>
       This is a brainsharpener for kids that helps them in mastering colors which are random.
       This application has been active for the last five years and has very good reviews from the users who have tried it.

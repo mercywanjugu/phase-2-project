@@ -25,7 +25,7 @@ function Home() {
   return (
     <div
       style={{
-        height: "100vh",
+        height: "80vh",
         width: "100vw",
         backgroundColor: "#" + color,
         display: "flex",
