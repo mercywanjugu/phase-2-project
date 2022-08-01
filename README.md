@@ -18,7 +18,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Github Pages link
-https://mercywanjugu.github.io/Phase-1-project/
+https://mercywanjugu.github.io/phase-2-project/
 
 ## License
 MIT License
