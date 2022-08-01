@@ -50,4 +50,5 @@ code {
 }
 .header{
   color:green;
+  font-style: inherit;
 }
